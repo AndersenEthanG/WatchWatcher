@@ -130,13 +130,9 @@
 		AAAFA37426BDCC9200DFFC5C /* Watch Watcher */ = {
 			isa = PBXGroup;
 			children = (
-				AAAFA37526BDCC9200DFFC5C /* AppDelegate.swift */,
-				AAAFA37726BDCC9200DFFC5C /* SceneDelegate.swift */,
-				AAAFA37926BDCC9200DFFC5C /* ViewController.swift */,
-				AAAFA37B26BDCC9200DFFC5C /* Main.storyboard */,
-				AAAFA37E26BDCC9300DFFC5C /* Assets.xcassets */,
-				AAAFA38026BDCC9300DFFC5C /* LaunchScreen.storyboard */,
-				AAAFA38326BDCC9300DFFC5C /* Info.plist */,
+				AAAFA3B526BDD0AD00DFFC5C /* View Controllers */,
+				AAAFA3B426BDD0A500DFFC5C /* Storyboards */,
+				AAAFA3B326BDD09A00DFFC5C /* Resources */,
 			);
 			path = "Watch Watcher";
 			sourceTree = "<group>";
@@ -145,8 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				AAAFA38B26BDCC9300DFFC5C /* Interface.storyboard */,
-				AAAFA38E26BDCC9300DFFC5C /* Assets.xcassets */,
-				AAAFA39026BDCC9300DFFC5C /* Info.plist */,
+				AAAFA3B726BDD12300DFFC5C /* Resources */,
 			);
 			path = "Watch Watcher WatchKit App";
 			sourceTree = "<group>";
@@ -155,14 +150,59 @@
 			isa = PBXGroup;
 			children = (
 				AAAFA39A26BDCC9300DFFC5C /* InterfaceController.swift */,
-				AAAFA39C26BDCC9300DFFC5C /* ExtensionDelegate.swift */,
 				AAAFA39E26BDCC9300DFFC5C /* NotificationController.swift */,
 				AAAFA3A026BDCC9300DFFC5C /* ComplicationController.swift */,
+				AAAFA3B626BDD0D500DFFC5C /* Resources */,
+			);
+			path = "Watch Watcher WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AAAFA3B326BDD09A00DFFC5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAAFA37526BDCC9200DFFC5C /* AppDelegate.swift */,
+				AAAFA37726BDCC9200DFFC5C /* SceneDelegate.swift */,
+				AAAFA37E26BDCC9300DFFC5C /* Assets.xcassets */,
+				AAAFA38326BDCC9300DFFC5C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AAAFA3B426BDD0A500DFFC5C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AAAFA37B26BDCC9200DFFC5C /* Main.storyboard */,
+				AAAFA38026BDCC9300DFFC5C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AAAFA3B526BDD0AD00DFFC5C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAAFA37926BDCC9200DFFC5C /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AAAFA3B626BDD0D500DFFC5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAAFA39C26BDCC9300DFFC5C /* ExtensionDelegate.swift */,
 				AAAFA3A226BDCC9400DFFC5C /* Assets.xcassets */,
 				AAAFA3A426BDCC9400DFFC5C /* Info.plist */,
 				AAAFA3A526BDCC9400DFFC5C /* PushNotificationPayload.apns */,
 			);
-			path = "Watch Watcher WatchKit Extension";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AAAFA3B726BDD12300DFFC5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAAFA38E26BDCC9300DFFC5C /* Assets.xcassets */,
+				AAAFA39026BDCC9300DFFC5C /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,7 +513,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XA96DJZ7VH;
-				INFOPLIST_FILE = "Watch Watcher WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "Watch Watcher WatchKit Extension/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -495,7 +535,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XA96DJZ7VH;
-				INFOPLIST_FILE = "Watch Watcher WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "Watch Watcher WatchKit Extension/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,7 +561,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XA96DJZ7VH;
 				IBSC_MODULE = Watch_Watcher_WatchKit_Extension;
-				INFOPLIST_FILE = "Watch Watcher WatchKit App/Info.plist";
+				INFOPLIST_FILE = "Watch Watcher WatchKit App/Resources/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "Andersen.Watch-Watcher.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -541,7 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XA96DJZ7VH;
 				IBSC_MODULE = Watch_Watcher_WatchKit_Extension;
-				INFOPLIST_FILE = "Watch Watcher WatchKit App/Info.plist";
+				INFOPLIST_FILE = "Watch Watcher WatchKit App/Resources/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "Andersen.Watch-Watcher.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -560,7 +600,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XA96DJZ7VH;
-				INFOPLIST_FILE = "Watch Watcher/Info.plist";
+				INFOPLIST_FILE = "Watch Watcher/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -581,7 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XA96DJZ7VH;
-				INFOPLIST_FILE = "Watch Watcher/Info.plist";
+				INFOPLIST_FILE = "Watch Watcher/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
