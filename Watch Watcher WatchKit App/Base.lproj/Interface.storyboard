@@ -12,11 +12,12 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_Watcher_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Watch Watcher" id="KQF-Lg-ats"/>
-                        <movie width="1" height="100" alignment="left" id="MzM-Gv-fxx"/>
+                        <button width="1" alignment="left" title="Start" id="DrS-J1-Vdj">
+                            <connections>
+                                <action selector="startBtn" destination="AgC-eL-Hgc" id="HaR-AH-8ez"/>
+                            </connections>
+                        </button>
                     </items>
-                    <connections>
-                        <outlet property="videoPlayer" destination="MzM-Gv-fxx" id="jrf-wK-d5F"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

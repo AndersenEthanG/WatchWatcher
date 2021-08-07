@@ -6,7 +6,9 @@
 //
 
 import WatchKit
-import Foundation
+import UIKit
+import AVFoundation
+import AVKit
 
 // MARK: - Video Properties
 // Video codec: H.264 High Profile
@@ -17,23 +19,14 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    // MARK: - Properties
-    let videoURL: URL = URL(fileURLWithPath: "")
-    
-    
-    // MARK: - Outlets
-    @IBOutlet weak var videoPlayer: WKInterfaceMovie!
-    
-    
-    // MARK: - Lifecycle
-    override func awake(withContext context: Any?) {
-        loadVideoData()
-    }
-
-    
-    // MARK: - Functions
-    func loadVideoData() {
+    // MARK: - Actions
+    @IBAction func startBtn() {
+        let path = URL(fileURLWithPath: "/Users/Ethan/Desktop/Xcode Projects/Watch Watcher/video.mp4")
+        let options = [WKMediaPlayerControllerOptionsAutoplayKey: true]
         
-    }
+        presentMediaPlayerController(with: path, options: options) { (didPlayToEnd, endTime, error) -> Void in
+            print("Video finished")
+        }
+    } // End of Function
     
 } // End of Class
