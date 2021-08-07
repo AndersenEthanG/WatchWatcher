@@ -13,22 +13,23 @@
 
 import UIKit
 import AVKit
+import youtube_ios_player_helper
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WKUIDelegate {
+    
+    // MARK: - Outlets
+    @IBOutlet weak var youTubePlayer: YTPlayerView!
+    
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    
-    // MARK: - Actions
-    @IBAction func startBtn(_ sender: Any) {
-        playVideo()
-    }
+        youTubePlayer.load(withVideoId: "z-9YlsON0u0")
+    } // End of View Did load
     
     
-    func playVideo() {
+    // MARK: - Local Video
+    @IBAction func startLocalBtn(_ sender: Any) {
         let path = "/Users/Ethan/Desktop/Xcode Projects/Watch Watcher/video.mp4"
         
         let player = AVPlayer(url: URL(fileURLWithPath: path))
@@ -39,6 +40,13 @@ class ViewController: UIViewController {
             player.play()
         }
     } // End of Function
-
+    
+    
+    // MARK: - Internet video
+    @IBAction func startYouTubeBtn(_ sender: Any) {
+        let path = URL(string: "https://www.youtube.com/embed/z-9YlsON0u0")
+        
+    } // End of Function
+    
 } // End of View Controller
 

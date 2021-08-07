@@ -14,7 +14,7 @@
                         <label alignment="left" text="Watch Watcher" id="KQF-Lg-ats"/>
                         <button width="1" alignment="left" title="Start" id="DrS-J1-Vdj">
                             <connections>
-                                <action selector="startBtn" destination="AgC-eL-Hgc" id="HaR-AH-8ez"/>
+                                <action selector="startMacLocalVideo" destination="AgC-eL-Hgc" id="HaR-AH-8ez"/>
                             </connections>
                         </button>
                     </items>
