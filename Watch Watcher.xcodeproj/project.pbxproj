@@ -22,6 +22,8 @@
 		AAAFA39F26BDCC9300DFFC5C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAFA39E26BDCC9300DFFC5C /* NotificationController.swift */; };
 		AAAFA3A126BDCC9300DFFC5C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAFA3A026BDCC9300DFFC5C /* ComplicationController.swift */; };
 		AAAFA3A326BDCC9400DFFC5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAFA3A226BDCC9400DFFC5C /* Assets.xcassets */; };
+		AAAFA3B826BDD8DC00DFFC5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAFA37E26BDCC9300DFFC5C /* Assets.xcassets */; };
+		AAAFA3BC26BDDA5900DFFC5C /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AAAFA3BB26BDDA5300DFFC5C /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,7 @@
 		AAAFA3A226BDCC9400DFFC5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAAFA3A426BDCC9400DFFC5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAAFA3A526BDCC9400DFFC5C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AAAFA3BB26BDDA5300DFFC5C /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,7 @@
 				AAAFA37526BDCC9200DFFC5C /* AppDelegate.swift */,
 				AAAFA37726BDCC9200DFFC5C /* SceneDelegate.swift */,
 				AAAFA37E26BDCC9300DFFC5C /* Assets.xcassets */,
+				AAAFA3BB26BDDA5300DFFC5C /* video.mp4 */,
 				AAAFA38326BDCC9300DFFC5C /* Info.plist */,
 			);
 			path = Resources;
@@ -325,6 +329,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAFA3BC26BDDA5900DFFC5C /* video.mp4 in Resources */,
+				AAAFA3B826BDD8DC00DFFC5C /* Assets.xcassets in Resources */,
 				AAAFA3A326BDCC9400DFFC5C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

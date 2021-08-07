@@ -8,19 +8,32 @@
 import WatchKit
 import Foundation
 
+// MARK: - Video Properties
+// Video codec: H.264 High Profile
+// Bit rate: 160 kpbs at up to 30 fps
+// 16:9 resolution: 320 x 180 in landscape orientation
+// Audio bit rate: 32 kpbs stereo
+
 
 class InterfaceController: WKInterfaceController {
 
+    // MARK: - Properties
+    let videoURL: URL = URL(fileURLWithPath: "")
+    
+    
+    // MARK: - Outlets
+    @IBOutlet weak var videoPlayer: WKInterfaceMovie!
+    
+    
+    // MARK: - Lifecycle
     override func awake(withContext context: Any?) {
-        // Configure interface objects here.
-    }
-    
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
+        loadVideoData()
     }
 
-}
+    
+    // MARK: - Functions
+    func loadVideoData() {
+        
+    }
+    
+} // End of Class
