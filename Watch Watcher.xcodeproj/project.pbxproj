@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,8 +22,6 @@
 		AAAFA39626BDCC9300DFFC5C /* Watch Watcher WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AAAFA39526BDCC9300DFFC5C /* Watch Watcher WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AAAFA39B26BDCC9300DFFC5C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAFA39A26BDCC9300DFFC5C /* InterfaceController.swift */; };
 		AAAFA39D26BDCC9300DFFC5C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAFA39C26BDCC9300DFFC5C /* ExtensionDelegate.swift */; };
-		AAAFA39F26BDCC9300DFFC5C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAFA39E26BDCC9300DFFC5C /* NotificationController.swift */; };
-		AAAFA3A126BDCC9300DFFC5C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAFA3A026BDCC9300DFFC5C /* ComplicationController.swift */; };
 		AAAFA3A326BDCC9400DFFC5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAFA3A226BDCC9400DFFC5C /* Assets.xcassets */; };
 		AAAFA3B826BDD8DC00DFFC5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAFA37E26BDCC9300DFFC5C /* Assets.xcassets */; };
 		AAAFA3BC26BDDA5900DFFC5C /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AAAFA3BB26BDDA5300DFFC5C /* video.mp4 */; };
@@ -94,8 +92,6 @@
 		AAAFA39526BDCC9300DFFC5C /* Watch Watcher WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Watcher WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAFA39A26BDCC9300DFFC5C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		AAAFA39C26BDCC9300DFFC5C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		AAAFA39E26BDCC9300DFFC5C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		AAAFA3A026BDCC9300DFFC5C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		AAAFA3A226BDCC9400DFFC5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAAFA3A426BDCC9400DFFC5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAAFA3A526BDCC9400DFFC5C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
@@ -142,7 +138,6 @@
 				3B267856001500510866A818 /* Pods-Watch Watcher WatchKit Extension.debug.xcconfig */,
 				0C87894FA44D1CBF795321BA /* Pods-Watch Watcher WatchKit Extension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -191,8 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				AAAFA39A26BDCC9300DFFC5C /* InterfaceController.swift */,
-				AAAFA39E26BDCC9300DFFC5C /* NotificationController.swift */,
-				AAAFA3A026BDCC9300DFFC5C /* ComplicationController.swift */,
 				AAAFA3B626BDD0D500DFFC5C /* Resources */,
 			);
 			path = "Watch Watcher WatchKit Extension";
@@ -491,8 +484,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAAFA39F26BDCC9300DFFC5C /* NotificationController.swift in Sources */,
-				AAAFA3A126BDCC9300DFFC5C /* ComplicationController.swift in Sources */,
 				AAAFA39D26BDCC9300DFFC5C /* ExtensionDelegate.swift in Sources */,
 				AAAFA39B26BDCC9300DFFC5C /* InterfaceController.swift in Sources */,
 			);

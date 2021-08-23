@@ -40,13 +40,6 @@ class ViewController: UIViewController, WKUIDelegate {
             player.play()
         }
     } // End of Function
-    
-    
-    // MARK: - Internet video
-    @IBAction func startYouTubeBtn(_ sender: Any) {
-        let path = URL(string: "https://www.youtube.com/embed/z-9YlsON0u0")
-        
-    } // End of Function
-    
+
 } // End of View Controller
 

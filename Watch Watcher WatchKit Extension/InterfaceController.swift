@@ -19,16 +19,13 @@ class InterfaceController: WKInterfaceController {
 
     // MARK: - Actions
     @IBAction func startMacLocalVideo() {
-//        let path = URL(fileURLWithPath: "/Users/Ethan/Desktop/Xcode Projects/Watch Watcher/video.mp4")
-        let path = URL(string: "http://www.youtube.com/embed/z-9YlsON0u0")
+        let path = URL(fileURLWithPath: "/Users/Ethan/Desktop/Xcode Projects/Watch Watcher/video.mp4")
         
         let options = [WKMediaPlayerControllerOptionsAutoplayKey: true]
         
-        presentMediaPlayerController(with: path!, options: options) { (didPlayToEnd, endTime, error) -> Void in
+        presentMediaPlayerController(with: path, options: options) { (didPlayToEnd, endTime, error) -> Void in
             print("Video finished")
         }
     } // End of Function
-    
-    
     
 } // End of Class
