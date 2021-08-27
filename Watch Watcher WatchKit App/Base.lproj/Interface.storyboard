@@ -12,12 +12,16 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_Watcher_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Watch Watcher" id="KQF-Lg-ats"/>
-                        <button width="1" alignment="left" title="Start" id="DrS-J1-Vdj">
+                        <label alignment="left" text="Video Title" id="XCI-hg-pQY"/>
+                        <button width="1" alignment="left" title="Play" id="mlb-ZV-fhH">
                             <connections>
-                                <action selector="startMacLocalVideo" destination="AgC-eL-Hgc" id="HaR-AH-8ez"/>
+                                <action selector="playBtn" destination="AgC-eL-Hgc" id="Oud-fu-3pw"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="videoTitleLabel" destination="XCI-hg-pQY" id="mj2-LV-jOA"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
