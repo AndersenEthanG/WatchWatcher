@@ -67,7 +67,7 @@ class ViewController: UIViewController, WCSessionDelegate {
                 let videoMessage = [ "finalUrl" : fetchedVideo.downloadUrl, "title" : fetchedVideo.youTubeTitle]
     
                 if self.session.activationState == .activated {
-//                    print(videoMessage)
+                    print(videoMessage)
                     self.session.transferUserInfo(videoMessage)
                 }
             } // End of Get Download URL

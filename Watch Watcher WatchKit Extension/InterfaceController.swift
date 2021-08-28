@@ -66,10 +66,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     // MARK: - Functions
     func downloadVideo() {
-        guard let finalUrl = finalUrl else { return }
-//        let finalUrl = "https://d2c3ct5w4v6137.cloudfront.net/youtube_gvdf5n-zI14/18/nope.avi_360P.mp4"
-//        "https://d2c3ct5w4v6137.cloudfront.net/youtube_gvdf5n-zI14/18/nope.avi_360P.mp4"
-        
+//        guard let finalUrl = finalUrl else { return }
+        let finalUrl = "https://d2c3ct5w4v6137.cloudfront.net/youtube_rlz-K7FaaA4d/18/FERRARI%20488%20GTB%20*CAPRISTO%20EXHAUST*%20POV%20Test%20Drive%20by%20AutoTopNL_360P.mp4"
         print("Downloading video...")
         DispatchQueue.global(qos: .background).async {
             if let url = URL(string: finalUrl) {

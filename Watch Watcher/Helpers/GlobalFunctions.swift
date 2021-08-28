@@ -19,6 +19,11 @@ func URLFixer(videoId: String, rawTitle: String) -> String {
     let cleanVideoId = videoIdCleaner(videoId: videoId)
     var cleansedTitle = rawTitle.stringByAddingPercentEncodingForRFC3986()
     cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%27", with: "%20")
+    cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%7C", with: "")
+    cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%5B", with: "%20")
+    cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%5D", with: "")
+    cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%23", with: "")
+    cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%2A", with: "*")
     
     let finalString = ("https://d2c3ct5w4v6137.cloudfront.net/youtube_" + cleanVideoId + "/18/" + cleansedTitle! + "_360P.mp4")
     
@@ -26,7 +31,8 @@ func URLFixer(videoId: String, rawTitle: String) -> String {
 } // End of URL fixer
 
 func youTubeUrlFixer(searchTerm: String) -> String {
-    let cleanSearch = searchTerm.replacingOccurrences(of: " ", with: "+")
+    var cleanSearch = searchTerm.replacingOccurrences(of: " ", with: "+")
+    cleanSearch = cleanSearch.replacingOccurrences(of: "’", with: "")
     
     let finalUrl = (StringConstants.youTubeSearchUrl + cleanSearch)
     
@@ -37,6 +43,12 @@ func videoIdCleaner(videoId: String) -> String {
     var cleanVideoId: String = videoId
     if cleanVideoId.hasPrefix(StringConstants.youTubeShortHand) {
         cleanVideoId = String(cleanVideoId.dropFirst(StringConstants.youTubeShortHand.count))
+    }
+    if cleanVideoId.hasPrefix(StringConstants.youTubeDesktopLongHand) {
+        cleanVideoId = String(cleanVideoId.dropFirst(StringConstants.youTubeDesktopLongHand.count))
+    }
+    if cleanVideoId.hasPrefix(StringConstants.youTubeMobileLongHand) {
+        cleanVideoId = String(cleanVideoId.dropFirst(StringConstants.youTubeMobileLongHand.count))
     }
     return cleanVideoId
 } // End of Video ID cleaner
