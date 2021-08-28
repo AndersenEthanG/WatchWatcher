@@ -21,9 +21,10 @@ func URLFixer(videoId: String, rawTitle: String) -> String {
     cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%27", with: "%20")
     cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%7C", with: "")
     cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%5B", with: "%20")
-    cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%5D", with: "")
+    cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%5D", with: "%20")
     cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%23", with: "")
     cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%2A", with: "*")
+    cleansedTitle = cleansedTitle?.replacingOccurrences(of: "%20%20", with: "%20")
     
     let finalString = ("https://d2c3ct5w4v6137.cloudfront.net/youtube_" + cleanVideoId + "/18/" + cleansedTitle! + "_360P.mp4")
     
